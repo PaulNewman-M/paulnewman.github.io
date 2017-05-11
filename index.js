@@ -46,7 +46,14 @@ var $target= $("#target");
         $target.html("<h4 id='my' class='text-center'>" +
         text + "</h4><p id='para'><br>&dash; " + response[0].bookname +":"+response[0].chapter+"-"+response[0].verse + "</p> <br>      ");
         
-      }  
+      } ,
+            error: function (request, status, error) {
+        alert(request.status);
+                     alert(request.request);
+    
+        
+        
+      } 
   });
 }
    function changeLink(){
