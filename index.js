@@ -36,7 +36,7 @@ var $target= $("#target");
     
       url: "http://labs.bible.org/api/?passage=random&type=json&formatting=plain&callback=?",
      dataType: "jsonp",
-     // data: "lang=en",
+      data: "lang=en",
       success: function( response) {
         var v=response[0].text;
         
